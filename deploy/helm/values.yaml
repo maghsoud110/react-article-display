@@ -41,9 +41,9 @@ ingress:
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
   hosts:
-     - reactapp.apps.rancher.adartish.de
-  paths:
-     - /
+     - host: reactapp.apps.rancher.adartish.de
+       paths:
+        - path: /
   tls: 
     - secretName: chart-example-tls
       hosts:
