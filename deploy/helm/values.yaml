@@ -43,7 +43,7 @@ ingress:
   hosts:
      - host: reactapp.apps.rancher.adartish.de
        paths:
-        - path: /
+        - /
   tls: 
     - secretName: chart-example-tls
       hosts:
